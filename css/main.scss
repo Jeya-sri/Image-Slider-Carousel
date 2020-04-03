@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+html,
+body {
+    background-color: #2d60ec;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    overflow: hidden;
+}
+
+.images {
+    // width: 80%;
+    height: 20vh;
+    animation: slider 1s linear;
+}
+
+#slider {
+    width: 50%;
+    max-width: 80%;
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    h3 {
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: 500;
+        font-size: x-large;
+        text-align: center;
+    }
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #2d60ec;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.next {
+    border-radius: 10px 0px 0px 10px;
+    // margin-left: 950px;
+    right: 5%;
+}
+
+.prev {
+    border-radius: 0px 10px 10px 0px;
+}
+
+@keyframes slider {
+    0% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ctrl {
+    max-width: 2vh;
+}
